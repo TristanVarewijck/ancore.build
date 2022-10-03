@@ -1,12 +1,16 @@
-import Button from "react-bootstrap/Button";
+import { useContext } from "react";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function MainNav() {
+import { languageSetting } from "../../App";
+function MainNav({ languageSetter }) {
+  const content = useContext(languageSetting);
+
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar expand="lg" variant="dark">
       <Container fluid>
         <Navbar.Brand href="#">
           <img src="assets/branding/logo.svg" alt="ancore build logo" />{" "}
@@ -15,23 +19,40 @@ function MainNav() {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
+            style={{ maxHeight: "auto" }}
             navbarScroll
           >
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/services">Services</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/portfolio">{content.Navbar.portfolio}</Nav.Link>
+            <Nav.Link href="/services">{content.Navbar.services}</Nav.Link>
+            <Nav.Link href="/about">{content.Navbar.about}</Nav.Link>
           </Nav>
           <Nav>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item>English</NavDropdown.Item>
-              <NavDropdown.Item>Russian</NavDropdown.Item>
-              <NavDropdown.Item>Turkish</NavDropdown.Item>
-              <NavDropdown.Item>Netherlands</NavDropdown.Item>
+            <NavDropdown title={content.language} id="navbarScrollingDropdown">
+              <NavDropdown.Item id="EN" onClick={languageSetter}>
+                󠁧󠁢󠁥󠁮󠁧🇬🇧 English
+              </NavDropdown.Item>
+              <NavDropdown.Item id="RU" onClick={languageSetter}>
+                🇷🇺 Russian
+              </NavDropdown.Item>
+              <NavDropdown.Item id="TR" onClick={languageSetter}>
+                🇹🇷 Turkish
+              </NavDropdown.Item>
+              <NavDropdown.Item id="DU" onClick={languageSetter}>
+                🇳🇱 Dutch
+              </NavDropdown.Item>
             </NavDropdown>
+            <br />
           </Nav>
 
-          <Button>Contact Us</Button>
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="contactButton"
+          >
+            <p>{content.Navbar.contact}</p>
+            <img src="/assets/icons/arrow-right.svg" alt="arrow right icon" />
+          </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,16 +1,56 @@
-$black: #101010;
-$white: #fff;
+// variables
+@import "../variables";
 
-$navbar-dark-color: rgba($white, 0.55);
-$navbar-dark-hover-color: rgba($white, 0.75);
+// Navbar
+$navbar-padding-y: 0.8rem;
+$navbar-padding-x: 0.2rem;
+
+// Dark
+$navbar-dark-color: rgba($white, 1);
+$navbar-dark-hover-color: rgba($white, 0.65);
 $navbar-dark-active-color: $white;
 $navbar-dark-disabled-color: rgba($white, 0.25);
-$navbar-dark-toggler-icon-bg: url("../../../public/assets/icons/menu-i.svg");
+$navbar-dark-toggler-icon-bg: url("../../../public/assets/icons/menu-i-light.svg");
 $navbar-dark-toggler-border-color: rgba($white, 0.1);
+$bg-white: rgba($white, 0);
 
-$navbar-light-color: rgba($black, 0.55);
-$navbar-light-hover-color: rgba($black, 0.7);
+// White
+$navbar-light-color: rgba($black, 0.85);
+$navbar-light-hover-color: rgba($black, 0.65);
 $navbar-light-active-color: rgba($black, 0.9);
 $navbar-light-disabled-color: rgba($black, 0.3);
-$navbar-light-toggler-icon-bg: url("../../../public/assets/icons/menu-i-light.svg");
+$navbar-light-toggler-icon-bg: url("../../../public/assets/icons/menu-i.svg");
 $navbar-light-toggler-border-color: rgba($black, 0.1);
+$bg-dark: rgba($black, 0);
+
+// Dropdown
+$dropdown-color: $black;
+$dropdown-bg: $gray;
+$dropdown-border-color: $lightGray;
+$dropdown-border-radius: 0.375rem;
+$dropdown-border-width: 1px;
+$dropdown-link-color: white;
+$dropdown-link-hover-color: $black;
+$dropdown-link-hover-bg: $white;
+
+// Custom Styles
+.contactButton {
+  width: 175px;
+  border-radius: 75px;
+  background: rgba($action, 0.3);
+  color: $action;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 120ms linear;
+  p {
+    margin: 0px;
+  }
+
+  &:hover {
+    opacity: 0.85;
+    color: $action;
+  }
+}
