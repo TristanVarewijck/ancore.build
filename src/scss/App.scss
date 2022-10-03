@@ -1,0 +1,8 @@
+// components overwrites
+@import "./components/Navbar.scss";
+
+// global styles
+$font-family-base: "Open Sans", sans-serif;
+$body-bg: #101010;
+
+@import "~bootstrap/scss/bootstrap";
