@@ -1,21 +1,26 @@
 import { useContext } from "react";
+import { languageSetting } from "../../App";
 
+// components
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-import { languageSetting } from "../../App";
 function MainNav({ languageSetter }) {
   const content = useContext(languageSetting);
+  console.log(content);
 
   return (
     <Navbar expand="lg" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="#">
-          <img src="assets/branding/logo.svg" alt="ancore build logo" />{" "}
+        <Navbar.Brand href="/">
+          <img src="assets/branding/logo.svg" alt="ancore build logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle
+          aria-controls="navbarScroll"
+          style={{ border: "none", outline: "none" }}
+        />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
@@ -44,12 +49,7 @@ function MainNav({ languageSetter }) {
             <br />
           </Nav>
 
-          <a
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="contactButton"
-          >
+          <a href="/contact" className="contactButton">
             <p>{content.Navbar.contact}</p>
             <img src="/assets/icons/arrow-right.svg" alt="arrow right icon" />
           </a>
