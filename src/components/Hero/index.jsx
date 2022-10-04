@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 import Button from "react-bootstrap/button";
 
 function Hero() {
@@ -13,7 +12,7 @@ function Hero() {
 
           <img
             src="/assets/images/banner-img.png"
-            class="img-fluid"
+            className="img-fluid mb-2"
             alt="Responsive image"
           />
         </Col>

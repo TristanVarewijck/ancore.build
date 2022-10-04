@@ -13,7 +13,7 @@ function MainNav({ languageSetter }) {
 
   return (
     <Navbar expand="lg" variant="dark">
-      <Container fluid>
+      <Container fluid="xxl">
         <Navbar.Brand href="/">
           <img src="assets/branding/logo.svg" alt="ancore build logo" />
         </Navbar.Brand>
