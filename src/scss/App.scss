@@ -1,9 +1,23 @@
 // components overwrites
 @import "./variables";
 @import "./components/Navbar.scss";
+@import "./components/Hero.scss";
 
 // global styles
 $font-family-base: $font-family;
 $body-bg: $black;
+$body-color: $white;
+$headings-font-weight: 600;
+
+html {
+  overflow-x: hidden;
+  body {
+    overflow-x: hidden;
+    p {
+      opacity: 0.82;
+      font-weight: 300;
+    }
+  }
+}
 
 @import "~bootstrap/scss/bootstrap";

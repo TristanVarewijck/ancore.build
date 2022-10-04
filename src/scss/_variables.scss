@@ -4,3 +4,19 @@ $lightGray: #373737;
 $white: #ffffff;
 $action: #00ffb9;
 $font-family: "Open Sans", sans-serif;
+
+// grid system
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1536px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1035px,
+);

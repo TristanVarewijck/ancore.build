@@ -1,0 +1,35 @@
+@import "../variables";
+
+$card-border-width: 0px;
+$card-border-color: none;
+$card-border-radius: 6px;
+$card-height: 600px;
+
+.Hero-img {
+  min-width: 275px;
+  min-height: 600px;
+  height: auto;
+  background: gray;
+  border-radius: 2px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-1 {
+  h5::first-letter {
+    color: $action;
+  }
+
+  padding-bottom: 15px;
+  border-bottom: 1px solid $lightGray;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
