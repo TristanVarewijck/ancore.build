@@ -13,7 +13,6 @@ const Home = () => {
     normal: <div className="margin-normal"></div>,
   };
 
-  console.log(ref);
   return (
     <Container fluid="xxl" className="Home mt-5">
       <Hero scrollTo={ref} />
@@ -26,6 +25,7 @@ const Home = () => {
       />
       {margin.small}
       <Projects />
+      {margin.normal}
     </Container>
   );
 };

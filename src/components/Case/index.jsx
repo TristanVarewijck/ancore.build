@@ -6,8 +6,15 @@ const Case = ({ title, banner, tags, href }) => {
     <li className="case">
       <a href={href}>
         <section>
-          <h4>{title}</h4>
-          <img src={banner} className="img-fluid mb-2" alt="Responsive image" />
+          <h6>{title}</h6>
+          <div className="banner-container">
+            <img
+              src={banner}
+              className="banner img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+
           <div>{tagsElements}</div>
         </section>
       </a>

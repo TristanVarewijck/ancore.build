@@ -3,15 +3,24 @@ li.case {
     display: block;
     text-decoration: none;
     color: #fff;
-    h4 {
+    h6 {
       text-transform: uppercase;
       font-weight: 300 !important;
-      opacity: 0.87;
     }
-    img {
+    .banner-container {
+      position: relative;
       width: 100%;
       height: auto;
-      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 7px;
+      img.banner {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
     div {
       display: flex;

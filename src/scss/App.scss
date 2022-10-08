@@ -23,7 +23,7 @@ $theme-colors: (
   // "warning": $warning,
   // "danger": $danger,
   // "light": $light,
-  // "dark": $dark,,,,,,,,,,,,,,,,,,,
+  // "dark": $dark,,,,,,,,,,,,,,,,,,,,
 );
 
 html {
@@ -44,6 +44,7 @@ html {
     h2 {
       margin-bottom: 50px;
       line-height: 120%;
+      text-transform: uppercase;
     }
 
     .margin-small {
