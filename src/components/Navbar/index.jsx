@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function MainNav({ languageSetter }) {
+const MainNav = ({ languageSetter }) => {
   const content = useContext(languageSetting);
   console.log(content);
 
@@ -57,6 +57,6 @@ function MainNav({ languageSetter }) {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default MainNav;

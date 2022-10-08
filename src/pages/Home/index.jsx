@@ -1,10 +1,17 @@
+import { useState } from "react";
 import Hero from "../../components/Hero";
+import Services from "../../components/Services";
+import Container from "react-bootstrap/Container";
 
-function Home() {
+const Home = () => {
+  const [ref, setRef] = useState(null);
+
+  console.log(ref);
   return (
-    <div className="Home">
-      <Hero />
-    </div>
+    <Container fluid="xxl" className="Home mt-5">
+      <Hero scrollTo={ref} />
+      <Services setRef={setRef} />
+    </Container>
   );
-}
+};
 export default Home;

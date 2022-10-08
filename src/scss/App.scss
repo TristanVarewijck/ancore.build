@@ -2,12 +2,26 @@
 @import "./variables";
 @import "./components/Navbar.scss";
 @import "./components/Hero.scss";
+@import "./components/HeaderTextBlock.scss";
+@import "./components/Link.scss";
+@import "./components/Services.scss";
 
 // global styles
 $font-family-base: $font-family;
 $body-bg: $black;
 $body-color: $white;
 $headings-font-weight: 600;
+
+$theme-colors: (
+  "primary": $action,
+  "secondary": $black,
+  // "success": $success,
+  // "info": $info,
+  // "warning": $warning,
+  // "danger": $danger,
+  // "light": $light,
+  // "dark": $dark,,,,,,,,
+);
 
 html {
   overflow-x: hidden;
@@ -16,6 +30,16 @@ html {
     p {
       opacity: 0.82;
       font-weight: 300;
+      margin: 0px;
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    h2 {
+      margin-bottom: 50px;
     }
   }
 }

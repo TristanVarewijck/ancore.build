@@ -1,0 +1,78 @@
+.services {
+  margin-top: 50px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $lightGray;
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: 150ms linear;
+
+      &:hover {
+        color: $action;
+        border-bottom: 1px solid $action;
+        transform: 0.5s;
+      }
+
+      div:first-child p {
+        font-size: 28px;
+      }
+
+      div:last-child {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .services > ul {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .services > ul > li {
+    justify-content: start;
+    > div:last-child {
+      display: none;
+    }
+
+    > div:first-child {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .services > ul {
+    li {
+      padding: 15px 10px;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .services > ul > li div:first-child {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .services > div > div > section {
+    padding: 15px 0;
+
+    div:first-child {
+      margin-right: 25px;
+    }
+  }
+}

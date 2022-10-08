@@ -1,42 +1,65 @@
 {
-  "EN": {
-    "language": "EN",
-    "title": "We build everything digital",
-    "Navbar": {
-      "portfolio": "Portfolio",
-      "services": "Services",
-      "about": "About",
-      "contact": "Contact"
-    }
-  },
-  "RU": {
-    "language": "RU",
-    "title": "Мы строим все цифровое",
-    "Navbar": {
-      "portfolio": "портфолио",
-      "services": "Сервисы",
-      "about": "насчет",
-      "contact": "контакт"
-    }
-  },
-  "TR": {
-    "language": "TR",
-    "title": "Herşeyi dijital olarak yapıyoruz",
-    "Navbar": {
-      "portfolio": "Portföy",
-      "services": "Hizmetler",
-      "about": "Ilgili",
-      "contact": "İletişim"
-    }
-  },
   "DU": {
     "language": "DU",
-    "title": "Wij bouwen alles digitaal",
     "Navbar": {
       "portfolio": "Portfolio",
       "services": "Diensten",
       "about": "Over ons",
       "contact": "Contact"
+    },
+    "Home": {
+      "Hero": {
+        "title": "WIJ BOUWEN ALLES DIGITAAL",
+        "textBlocks": [
+          {
+            "title": "Herşeyi dijital olarak yapıyoruz",
+            "text": "Donec pretium, nisl sed tempo"
+          },
+          {
+            "title": "Herşeyi dijital olarak yapıyoruz",
+            "text": "Donec pretium, nisl sed tempo"
+          },
+          {
+            "title": "Herşeyi dijital olarak yapıyoruz",
+            "text": "Donec pretium, nisl sed tempo"
+          }
+        ]
+      },
+      "Services": {
+        "title": "WIJ ZIJN BLIJ MET HET HOOGSTE RESULTAAT",
+        "servicesBlocks": [
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          }
+        ]
+      }
     }
   }
 }
