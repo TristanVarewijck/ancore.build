@@ -7,7 +7,7 @@ const Link = (props) => {
       onClick={!props.handleButton ? null : props.handleButton}
     >
       {props.text}
-      {props.icon && props.icon}
+      {props.icon && <i class={`bi bi-${props.icon}`}></i>}
     </a>
   );
 };

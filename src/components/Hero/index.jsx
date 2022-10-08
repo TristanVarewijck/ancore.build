@@ -14,7 +14,7 @@ const Hero = ({ scrollTo }) => {
   const content = useContext(languageSetting);
 
   return (
-    <div>
+    <div className="Hero">
       <Row className="gx-5 justify-content-center align-items-top">
         <Col md={7}>
           <h1 className="mb-3">{content.Home.Hero.title}</h1>
@@ -32,7 +32,7 @@ const Hero = ({ scrollTo }) => {
           </p>
           <Link
             text="Get Started"
-            icon={<i className="bi bi-arrow-down"></i>}
+            icon="arrow-down-square-fill"
             role="button"
             type="primary"
             handleButton={scrollToFirstSection}

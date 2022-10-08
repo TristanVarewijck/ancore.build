@@ -59,6 +59,31 @@
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           }
         ]
+      },
+      "Projects": {
+        "title": "WIJ BOUWEN ALLES DIGITAAL",
+        "cases": [
+          {
+            "title": "Amazing Service!",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          },
+          {
+            "title": "Amazing Service!",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          },
+          {
+            "title": "Amazing Service!",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          },
+          {
+            "title": "Amazing Service!",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          }
+        ]
       }
     }
   }

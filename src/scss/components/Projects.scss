@@ -1,0 +1,29 @@
+.projects {
+  ul {
+    margin: 0 auto;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 75px;
+    margin-bottom: 40px;
+  }
+
+  .link-to-portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .projects ul {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .projects ul {
+    grid-template-columns: auto;
+  }
+}

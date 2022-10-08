@@ -5,6 +5,9 @@
 @import "./components/HeaderTextBlock.scss";
 @import "./components/Link.scss";
 @import "./components/Services.scss";
+@import "./components/Quote.scss";
+@import "./components/Projects.scss";
+@import "./components/Case.scss";
 
 // global styles
 $font-family-base: $font-family;
@@ -20,7 +23,7 @@ $theme-colors: (
   // "warning": $warning,
   // "danger": $danger,
   // "light": $light,
-  // "dark": $dark,,,,,,,,
+  // "dark": $dark,,,,,,,,,,,,,,,,,,,
 );
 
 html {
@@ -40,6 +43,15 @@ html {
 
     h2 {
       margin-bottom: 50px;
+      line-height: 120%;
+    }
+
+    .margin-small {
+      height: 85px;
+    }
+
+    .margin-normal {
+      height: 125px;
     }
   }
 }
