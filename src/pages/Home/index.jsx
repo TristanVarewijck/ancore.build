@@ -5,6 +5,7 @@ import Services from "../../components/Services";
 import Quote from "../../components/Quote";
 import Projects from "../../components/Projects";
 import Partners from "../../components/Partners";
+import Reviews from "../../components/Reviews";
 
 const Home = () => {
   const [ref, setRef] = useState(null);
@@ -27,6 +28,13 @@ const Home = () => {
       <Projects />
       {margin.normal}
       <Partners />
+      {margin.normal}
+      <Reviews />
+      {margin.normal}
+      <Quote
+        title="We are ready to bring it to the next level"
+        icon="bug-fill"
+      />
     </Container>
   );
 };

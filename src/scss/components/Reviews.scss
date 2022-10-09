@@ -1,0 +1,84 @@
+.reviews {
+  margin: 100px 0;
+}
+
+.reviews > ul {
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.reviews ul li {
+  width: 320px;
+  height: 320px;
+  background: #181818;
+  border: 2px solid #373737;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.reviews > div > section > p {
+  margin-top: 90px;
+}
+
+.reviews > div > section > img:first-child {
+  position: absolute;
+  top: 30px;
+  width: 40px;
+  height: auto;
+}
+
+.reviews > div > section div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  width: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.reviews > div > section div section img {
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.reviews > div > section div section h3 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.reviews > div > section div section p {
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .reviews > div {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .reviews > div > section {
+    width: 280px;
+    height: 320px;
+    margin-right: 25px;
+  }
+
+  .reviews > div > section > p {
+    margin-top: 70px;
+  }
+
+  .reviews > div > section > img:first-child {
+    width: 25px;
+  }
+}

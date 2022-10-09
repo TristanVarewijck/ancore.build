@@ -9,12 +9,14 @@
 @import "./components/Projects.scss";
 @import "./components/Case.scss";
 @import "./components/Partners.scss";
+@import "./components/Reviews.scss";
+@import "./components/Testimonial.scss";
 
 // global styles
 $font-family-base: $font-family;
 $body-bg: $black;
 $body-color: $white;
-$headings-font-weight: 600;
+$headings-font-weight: 700;
 
 $theme-colors: (
   "primary": $action,
@@ -24,7 +26,7 @@ $theme-colors: (
   // "warning": $warning,
   // "danger": $danger,
   // "light": $light,
-  // "dark": $dark,,,,,,,,,,,,,,,,,,,,,
+  // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 html {
