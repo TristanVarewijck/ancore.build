@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 
 // global components
 import MainNav from "./components/Navbar";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 // styles
 import "./scss/App.scss";
@@ -51,7 +51,7 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </languageSetting.Provider>
     </BrowserRouter>
   );

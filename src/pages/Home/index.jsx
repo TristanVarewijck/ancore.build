@@ -35,6 +35,7 @@ const Home = () => {
         title="We are ready to bring it to the next level"
         icon="bug-fill"
       />
+      {margin.normal}
     </Container>
   );
 };

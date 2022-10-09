@@ -1,0 +1,127 @@
+footer {
+  background: $gray;
+  border-top: 2px solid $lightGray;
+  > div:first-child {
+    padding-top: 25px;
+  }
+  > div:last-child {
+    padding: 75px 0 25px 0;
+    p {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    div:nth-of-type(2) {
+      display: flex;
+      section {
+        margin-right: 50px;
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            a {
+              text-decoration: none;
+              color: #fff;
+              opacity: 0.82;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      section:last-child {
+        margin-right: 0px;
+      }
+    }
+    div:nth-of-type(1) {
+      section {
+        ul {
+          display: flex;
+          list-style: none;
+          margin-top: 25px;
+          gap: 8px;
+          li {
+            a {
+              span {
+                background-color: $lightGray;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+
+                i {
+                  margin: 0px;
+                  color: $action;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          li:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 1200px) {
+//   footer {
+//     > div:first-child {
+//       padding: 0 15px;
+//       padding-top: 25px;
+//     }
+
+//     div:last-child {
+//       padding: 75px 15px 25px 15px;
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 650px) {
+  footer {
+    > div:last-child {
+      padding: 50px 0 25px 0;
+      p {
+        margin: 0 auto;
+      }
+    }
+    > div {
+      flex-direction: column;
+      justify-content: center;
+
+      div:nth-of-type(1) {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      div:nth-of-type(2) {
+        margin-right: 0px;
+        // margin-bottom: 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        section {
+          margin: 0px;
+        }
+
+        h6,
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -11,6 +11,7 @@
 @import "./components/Partners.scss";
 @import "./components/Reviews.scss";
 @import "./components/Testimonial.scss";
+@import "./components/Footer.scss";
 
 // global styles
 $font-family-base: $font-family;
@@ -26,7 +27,7 @@ $theme-colors: (
   // "warning": $warning,
   // "danger": $danger,
   // "light": $light,
-  // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,
+  // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 ::-webkit-scrollbar {
