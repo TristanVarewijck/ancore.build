@@ -8,6 +8,7 @@
 @import "./components/Quote.scss";
 @import "./components/Projects.scss";
 @import "./components/Case.scss";
+@import "./components/Partners.scss";
 
 // global styles
 $font-family-base: $font-family;
@@ -23,7 +24,7 @@ $theme-colors: (
   // "warning": $warning,
   // "danger": $danger,
   // "light": $light,
-  // "dark": $dark,,,,,,,,,,,,,,,,,,,,
+  // "dark": $dark,,,,,,,,,,,,,,,,,,,,,
 );
 
 html {

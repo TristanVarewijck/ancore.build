@@ -26,6 +26,8 @@ const Services = ({ setRef }) => {
           <div>
             <p>{i.text}</p>
           </div>
+
+          {/* add a cool fact! */}
         </li>
       );
     }

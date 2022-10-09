@@ -4,10 +4,10 @@ import Hero from "../../components/Hero";
 import Services from "../../components/Services";
 import Quote from "../../components/Quote";
 import Projects from "../../components/Projects";
+import Partners from "../../components/Partners";
 
 const Home = () => {
   const [ref, setRef] = useState(null);
-
   const margin = {
     small: <div className="margin-small"></div>,
     normal: <div className="margin-normal"></div>,
@@ -26,6 +26,7 @@ const Home = () => {
       {margin.small}
       <Projects />
       {margin.normal}
+      <Partners />
     </Container>
   );
 };

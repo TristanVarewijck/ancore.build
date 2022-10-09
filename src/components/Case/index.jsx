@@ -8,13 +8,8 @@ const Case = ({ title, banner, tags, href }) => {
         <section>
           <h6>{title}</h6>
           <div className="banner-container">
-            <img
-              src={banner}
-              className="banner img-fluid"
-              alt="Responsive image"
-            />
+            <img src={banner} className="banner img-fluid" alt="Case Banner" />
           </div>
-
           <div>{tagsElements}</div>
         </section>
       </a>
