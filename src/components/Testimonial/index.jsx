@@ -1,9 +1,12 @@
 const Testimonial = ({ text, profile, name, position }) => {
   return (
-    <div>
-      <img src={`/assets/icons/quote-i.svg`} alt="Quote icon" />
+    <div className="testimonial">
+      {/* 1 */}
+      <img src={`/assets/icons/comma.svg`} alt="Quote icon" />
+      {/* 2 */}
       <p>{text}</p>
-      <div>
+      {/* 3 */}
+      <div className="profile">
         <section>
           <img
             src={`/assets/testimonials/${profile}`}
@@ -11,8 +14,8 @@ const Testimonial = ({ text, profile, name, position }) => {
           />
         </section>
         <section>
-          <h3>{name}</h3>
-          <p>{position}</p>
+          <p>{name}</p>
+          <small>{position}</small>
         </section>
       </div>
     </div>

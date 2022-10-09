@@ -1,0 +1,42 @@
+.testimonial {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  background: $gray;
+  border: 2px solid $lightGray;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 0 0 auto;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  > img {
+    width: 35px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    section:first-of-type {
+      img {
+        border-radius: 50px;
+        margin-right: 15px;
+      }
+    }
+    section:last-of-type {
+      p {
+        font-weight: 500;
+        opacity: 1;
+      }
+      small {
+        font-size: 12.5px;
+        margin-top: 2.5px;
+        font-weight: 300;
+        opacity: 0.87;
+      }
+    }
+  }
+}

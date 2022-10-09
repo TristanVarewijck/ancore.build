@@ -28,7 +28,7 @@ const Home = () => {
       <Projects />
       {margin.normal}
       <Partners />
-      {margin.normal}
+      {margin.small}
       <Reviews />
       {margin.normal}
       <Quote
