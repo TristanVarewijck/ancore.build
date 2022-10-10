@@ -18,7 +18,7 @@ const Services = ({ setRef }) => {
           title={i.title}
           subtitle={i.subtitle}
           text={i.text}
-          index={index}
+          index={index + 1}
         />
       </li>
     )

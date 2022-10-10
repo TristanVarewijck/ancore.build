@@ -1,63 +1,27 @@
 import TextBlock from "../TextBlock";
-import Link from "../Link";
+import ContactForm from "../ContactForm";
+import { useContext } from "react";
+import { languageSetting } from "../../App";
 
 const Contact = () => {
-  const contactForm = (
-    <div className="contactFormContainer">
-      <form>
-        <input type="text" name="name" placeholder="Name*" required></input>
-        <input type="email" name="email" placeholder="E-Mail*" required></input>
-        <textarea name="message" placeholder="Message*" required></textarea>
-        <input type="submit" value="Send" />
-      </form>
-    </div>
-  );
+  const content = useContext(languageSetting);
+  const contactElements = content.Home.Contact.methods.map((i, index) => {
+    return (
+      <li key={index}>
+        <TextBlock
+          title={i.title}
+          subtitle={i.subtitle}
+          index={index + 1}
+        ></TextBlock>
+      </li>
+    );
+  });
 
   return (
-    <div className="contactform">
+    <div className="contact">
       <h2>Feel free to send message</h2>
-      <ul>
-        <li>
-          <TextBlock
-            title={"title"}
-            subtitle={"subtitle"}
-            index={1}
-          ></TextBlock>
-        </li>
-
-        <li>
-          <TextBlock
-            title={"title"}
-            subtitle={"subtitle"}
-            index={1}
-          ></TextBlock>
-        </li>
-
-        <li>
-          <TextBlock
-            title={"title"}
-            subtitle={"subtitle"}
-            index={1}
-          ></TextBlock>
-        </li>
-
-        <li>
-          <TextBlock
-            title={"title"}
-            subtitle={"subtitle"}
-            index={1}
-          ></TextBlock>
-        </li>
-
-        <li>
-          <TextBlock
-            title={"title"}
-            subtitle={"subtitle"}
-            index={1}
-            text={contactForm}
-          ></TextBlock>
-        </li>
-      </ul>
+      <ul className="contact-options">{contactElements}</ul>
+      <ContactForm />
     </div>
   );
 };

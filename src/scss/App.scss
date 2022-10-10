@@ -13,6 +13,7 @@
 @import "./components/Reviews.scss";
 @import "./components/Testimonial.scss";
 @import "./components/Contact.scss";
+@import "./components/ContactForm.scss";
 @import "./components/Footer.scss";
 
 // global styles
@@ -25,11 +26,11 @@ $theme-colors: (
   "primary": $action,
   "secondary": $black,
   // "success": $success,
-  // "info": $info,
-  // "warning": $warning,
-  // "danger": $danger,
-  // "light": $light,
-  // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // "info": $info,
+    // "warning": $warning,
+    // "danger": $danger,
+    // "light": $light,
+    // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 ::-webkit-scrollbar {

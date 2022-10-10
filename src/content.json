@@ -1,5 +1,5 @@
 {
-  "DU": {
+  "EN": {
     "language": "DU",
     "Navbar": {
       "portfolio": "Portfolio",
@@ -88,52 +88,48 @@
       "Reviews": {
         "testimonials": [
           {
-            "title": "Amazing Service",
-            "subtitle": "Donec pretium, nisl sed tempo",
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
           },
           {
-            "title": "Amazing Service",
-            "subtitle": "Donec pretium, nisl sed tempo",
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
           },
           {
-            "title": "",
-            "subtitle": "Donec pretium, nisl sed tempo",
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
           },
           {
-            "title": "Contact form",
-            "subtitle": "Write us via our form",
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
           }
         ]
       },
       "Contact": {
         "methods": [
           {
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
-            "profile": "jane-doe.png",
-            "name": "Jane Doe",
-            "position": "Head researcher of Apple"
+            "title": "(020) 6 36440961",
+            "subtitle": "Telefoon number"
           },
           {
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
-            "profile": "jane-doe.png",
-            "name": "Jane Doe",
-            "position": "Head researcher of Apple"
+            "title": "contact@ancore.build",
+            "subtitle": "E-mail address"
           },
           {
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
-            "profile": "jane-doe.png",
-            "name": "Jane Doe",
-            "position": "Head researcher of Apple"
+            "title": "@ancorebuild",
+            "subtitle": "Telegram contact"
           },
           {
-            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
-            "profile": "jane-doe.png",
-            "name": "Jane Doe",
-            "position": "Head researcher of Apple"
+            "title": "Contact form",
+            "subtitle": "Write us in the form below"
           }
         ]
       }
