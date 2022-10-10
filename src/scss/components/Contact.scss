@@ -1,0 +1,92 @@
+ul {
+  list-style-type: none;
+}
+
+.contactFormContainer form {
+  position: relative;
+  background-color: #181818;
+  border: 2px solid #373737;
+  border-radius: 5px;
+  // width: 600px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.contactFormContainer form input,
+.contactFormContainer form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #373737;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #ffff;
+}
+
+.contactFormContainer form textarea {
+  height: 150px;
+  border-bottom: none;
+  resize: none;
+}
+.contactFormContainer form input[type="submit"] {
+  color: #000;
+  background: $action;
+  width: 200px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactform {
+    padding: 0 15px;
+  }
+  .contactform > section {
+    padding: 25px;
+  }
+
+  .contactform > section div:first-child div section:first-child {
+    width: 50px;
+    text-align: initial;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .contactform > section {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contactform > section div:first-child {
+    margin-bottom: 100px;
+  }
+
+  .contactFormContainer form::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .contactform > h2 {
+    font-size: 2em;
+  }
+
+  .contactform > section {
+    display: block;
+  }
+
+  .contactFormContainer form {
+    padding: 20px 10px;
+    width: 100%;
+  }
+  .contactFormContainer form textarea {
+    height: 250px;
+  }
+  .contactFormContainer form input[type="submit"] {
+    margin: 0 auto;
+  }
+}

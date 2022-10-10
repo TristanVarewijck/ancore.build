@@ -6,6 +6,7 @@ import Quote from "../../components/Quote";
 import Projects from "../../components/Projects";
 import Partners from "../../components/Partners";
 import Reviews from "../../components/Reviews";
+import Contact from "../../components/Contact";
 
 const Home = () => {
   const [ref, setRef] = useState(null);
@@ -36,6 +37,8 @@ const Home = () => {
         icon="bug-fill"
       />
       {margin.normal}
+      <Contact />
+      {margin.small}
     </Container>
   );
 };

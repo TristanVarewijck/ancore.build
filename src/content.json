@@ -88,6 +88,30 @@
       "Reviews": {
         "testimonials": [
           {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Contact form",
+            "subtitle": "Write us via our form",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          }
+        ]
+      },
+      "Contact": {
+        "methods": [
+          {
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
             "profile": "jane-doe.png",
             "name": "Jane Doe",
