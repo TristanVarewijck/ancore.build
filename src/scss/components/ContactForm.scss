@@ -33,10 +33,38 @@
             resize: none;
         }
     }
+
+    .submit-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+
+        p {
+            order: 2;
+        }
+    }
 }
 
 @media only screen and (max-width: 680px) {
-    .contactFormContainer form {
-        padding: 20px 10px;
+    .contactFormContainer {
+        form {
+            padding: 20px 10px;
+        }
+        .submit-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                order: 1;
+            }
+
+            button {
+                width: 100%;
+                order: 2;
+            }
+        }
     }
 }

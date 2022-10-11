@@ -1,3 +1,6 @@
 .contact-options {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

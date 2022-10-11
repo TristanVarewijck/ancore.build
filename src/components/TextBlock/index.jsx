@@ -10,7 +10,11 @@ const TextBlock = ({ title, subtitle, text, index }) => {
         <p>{subtitle}</p>
       </div>
 
-      {text && <div className="text">{text}</div>}
+      {text && (
+        <div className="text">
+          <p>{text}</p>
+        </div>
+      )}
     </div>
   );
 };
