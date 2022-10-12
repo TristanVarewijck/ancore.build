@@ -31,18 +31,14 @@ const ContactForm = () => {
       switch (true) {
         case !value.includes("@"):
           setFeedbackInput("/assets/icons/check-gray.svg");
-          console.log("need have a @");
           break;
         case value.includes("@") && !value.match(validEmailCheck):
           setFeedbackInput("/assets/icons/check-gray.svg");
-          console.log("This is a invalid email");
           break;
         default:
           setFeedbackInput("/assets/icons/check-green.svg");
-          console.log("email is great!");
       }
     }
-
     setFormData((prevState) => {
       return {
         ...prevState,
@@ -61,7 +57,7 @@ const ContactForm = () => {
         setFeedbackSubmit((prevState) => {
           return {
             ...prevState,
-            message: "Fill in all inputs please!",
+            message: "Fill in all inputs",
             icon: "/assets/icons/warning-red.svg",
           };
         });
@@ -70,7 +66,7 @@ const ContactForm = () => {
         setFeedbackSubmit((prevState) => {
           return {
             ...prevState,
-            message: "Your email must contain a @ sign.",
+            message: "E-mail address needs to contain a @ sign",
             icon: "/assets/icons/warning-red.svg",
           };
         });
@@ -80,7 +76,7 @@ const ContactForm = () => {
         setFeedbackSubmit((prevState) => {
           return {
             ...prevState,
-            message: "You entered a invalid email adress.",
+            message: "You entered a invalid E-mail address",
             icon: "/assets/icons/warning-orange.svg",
           };
         });
@@ -164,9 +160,10 @@ const ContactForm = () => {
           </div>
         </form>
       ) : (
-        <div>
-          <p>Thanks for your message we will reply as soon as possible!</p>
-        </div>
+        <form className="contact-thankyouMessage">
+          <h1>Thanks</h1>
+          <p>We will contact you as soon as possible!</p>
+        </form>
       )}
     </div>
   );

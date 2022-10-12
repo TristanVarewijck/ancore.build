@@ -1,118 +1,127 @@
 .contactFormContainer {
-    margin-bottom: 20px;
-    form {
-        position: relative;
-        background-color: $gray;
-        border: 2px solid $lightGray;
-        border-radius: 5px;
-        padding: 20px 40px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        margin-top: 25px;
+  margin-bottom: 20px;
 
-        input:focus,
-        input:active,
-        textarea:focus,
-        textarea:active {
-            outline: none !important;
-            box-shadow: none !important;
-        }
+  form.contact-thankyouMessage {
+    border-radius: 5px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: errorMessageUp 300ms 1 forwards;
+  }
+  form {
+    position: relative;
+    background-color: $gray;
+    border: 2px solid $lightGray;
+    border-radius: 5px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 25px;
+    height: 425px;
 
-        input,
-        textarea {
-            position: relative;
-            background: none;
-            border: none;
-            border-bottom: 2px solid #373737;
-            padding: 10px;
-            margin-bottom: 20px;
-            color: #ffff;
-        }
-
-        input[type="email"] {
-            background-repeat: no-repeat;
-            background-position-y: center;
-            background-position-x: right;
-        }
-
-        small {
-            padding: 10px;
-            color: $lightGray;
-            font-weight: 600;
-        }
-
-        textarea {
-            height: 150px;
-            border-bottom: none;
-            resize: none;
-        }
+    input:focus,
+    input:active,
+    textarea:focus,
+    textarea:active {
+      outline: none !important;
+      box-shadow: none !important;
     }
 
-    .submit-container {
-        min-height: 75px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-        gap: 20px;
-        position: relative;
-
-        > div {
-            order: 2;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 8px;
-            animation: errorMessageRight 200ms 1 forwards;
-        }
+    input,
+    textarea {
+      position: relative;
+      background: none;
+      border: none;
+      border-bottom: 2px solid #373737;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: #ffff;
     }
+
+    input[type="email"] {
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: right;
+    }
+
+    small {
+      padding: 10px;
+      color: $lightGray;
+      font-weight: 600;
+    }
+
+    textarea {
+      height: 150px;
+      border-bottom: none;
+      resize: none;
+    }
+  }
+
+  .submit-container {
+    min-height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+
+    > div {
+      order: 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      animation: errorMessageRight 300ms 1 forwards;
+    }
+  }
 }
 
 @media only screen and (max-width: 680px) {
-    .contactFormContainer {
-        form {
-            padding: 20px 10px;
-            height: 425px;
-        }
-        .submit-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            flex-direction: column;
-            gap: 10px;
-
-            > div {
-                gap: 4px;
-                animation: errorMessageUp 200ms 1 forwards;
-            }
-
-            button {
-                width: 100%;
-                order: 2;
-            }
-        }
+  .contactFormContainer {
+    form {
+      padding: 20px 10px;
     }
+    .submit-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      gap: 10px;
+
+      > div {
+        gap: 4px;
+        animation: errorMessageUp 300ms 1 forwards;
+      }
+
+      button {
+        width: 100%;
+        order: 2;
+      }
+    }
+  }
 }
 
 @keyframes errorMessageRight {
-    from {
-        transform: translateX(-15px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes errorMessageUp {
-    from {
-        transform: translateY(15px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

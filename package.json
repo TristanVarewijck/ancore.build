@@ -9,12 +9,15 @@
     "bootstrap": "^5.2.2",
     "dotenv": "^16.0.3",
     "firebase": "^9.10.0",
+    "nodemailer-react": "^1.0.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
+    "react-typed": "^1.2.0",
     "sass": "^1.55.0",
+    "stream": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +43,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "browser": {
+    "crypto": true,
+    "fs": false,
+    "path": false,
+    "os": false,
+    "net": false,
+    "stream": false,
+    "tls": false
   }
 }
