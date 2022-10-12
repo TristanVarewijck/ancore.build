@@ -9,17 +9,18 @@ const ContactForm = () => {
     icon: "",
   });
   const [hasSubmitted, setHasSubmitted] = useState(false);
-  // const [emails, setEmails] = useState();
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     message: "",
   });
+  const [chaCount, setChaCount] = useState(150);
   const validEmailCheck = new RegExp(
     /^[A-Za-z0-9_!#$%&'*+=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
     "gm"
   );
 
+  // handle states on input
   function handleFormData(e) {
     const { name, value } = e.target;
     if (feedbackSubmit.message) {
@@ -42,7 +43,7 @@ const ContactForm = () => {
       }
     }
 
-    setFormData(function (prevState) {
+    setFormData((prevState) => {
       return {
         ...prevState,
         [name]: value,
@@ -50,6 +51,7 @@ const ContactForm = () => {
     });
   }
 
+  // handle states on submit
   function submitHandler(e) {
     e.preventDefault();
     switch (true) {
@@ -89,6 +91,23 @@ const ContactForm = () => {
     }
   }
 
+  // handle characther count of textarea
+  function characterCount(e) {
+    const maxCha = 150;
+    const currentLength = e.target.value.length;
+    if (currentLength >= maxCha) {
+      setFormData((prevState) => {
+        return {
+          ...prevState,
+          message: formData.message.substring(0, maxCha),
+        };
+      });
+      setChaCount((prevState) => prevState - prevState);
+    } else {
+      setChaCount(maxCha - currentLength);
+    }
+  }
+
   return (
     <div className="contactFormContainer">
       {!hasSubmitted ? (
@@ -99,6 +118,7 @@ const ContactForm = () => {
             placeholder="Name*"
             onChange={handleFormData}
             value={formData.username}
+            autoComplete="off"
             required
           ></input>
           <input
@@ -107,6 +127,10 @@ const ContactForm = () => {
             placeholder="name@example.com"
             value={formData.email}
             onChange={handleFormData}
+            autoComplete="off"
+            style={{
+              backgroundImage: `url(${feedbackInput})`,
+            }}
             required
           ></input>
           <textarea
@@ -115,8 +139,13 @@ const ContactForm = () => {
             placeholder="Message*"
             onChange={handleFormData}
             value={formData.message}
+            autoComplete="off"
+            maxlength="150"
+            minlength="1"
+            onKeyUp={characterCount}
             required
           ></textarea>
+          <small className="textarea-count">{chaCount}/150</small>
           <div className="submit-container">
             {feedbackSubmit.message && (
               <div>

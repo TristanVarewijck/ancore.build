@@ -21,12 +21,25 @@
 
         input,
         textarea {
+            position: relative;
             background: none;
             border: none;
             border-bottom: 2px solid #373737;
             padding: 10px;
             margin-bottom: 20px;
             color: #ffff;
+        }
+
+        input[type="email"] {
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: right;
+        }
+
+        small {
+            padding: 10px;
+            color: $lightGray;
+            font-weight: 600;
         }
 
         textarea {
