@@ -1,4 +1,5 @@
 .contactFormContainer {
+    margin-bottom: 20px;
     form {
         position: relative;
         background-color: $gray;
@@ -6,6 +7,7 @@
         border-radius: 5px;
         padding: 20px 40px;
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
         margin-top: 25px;
 
@@ -35,13 +37,21 @@
     }
 
     .submit-container {
+        min-height: 75px;
         display: flex;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: row;
         gap: 20px;
+        position: relative;
 
-        p {
+        > div {
             order: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            animation: errorMessageRight 200ms 1 forwards;
         }
     }
 }
@@ -50,15 +60,18 @@
     .contactFormContainer {
         form {
             padding: 20px 10px;
+            height: 425px;
         }
         .submit-container {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             flex-direction: column;
             gap: 10px;
 
-            p {
-                order: 1;
+            > div {
+                gap: 4px;
+                animation: errorMessageUp 200ms 1 forwards;
             }
 
             button {
@@ -66,5 +79,27 @@
                 order: 2;
             }
         }
+    }
+}
+
+@keyframes errorMessageRight {
+    from {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes errorMessageUp {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

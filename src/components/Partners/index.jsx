@@ -32,9 +32,9 @@ const Partners = () => {
     },
   ];
 
-  const partnerElements = items.map((i) => {
+  const partnerElements = items.map((i, index) => {
     return (
-      <li>
+      <li key={`Partner: ${index}`}>
         <a href={i.link}>
           <img
             className="img-fluid"

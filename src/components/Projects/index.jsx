@@ -5,17 +5,16 @@ import Link from "../Link";
 
 const Projects = () => {
   const content = useContext(languageSetting);
-  const casesElements = content.Home.Projects.cases.map((i, index) => {
-    return (
+  const casesElements = content.Home.Projects.cases.map((i, index) => (
+    <li key={`Case: ${index}`}>
       <Case
-        key={`Case: ${index}`}
         title={i.title}
         banner={i.banner}
         tags={i.tags}
         href={`/portfolio/${i.title}`}
       />
-    );
-  });
+    </li>
+  ));
 
   return (
     <div className="projects">

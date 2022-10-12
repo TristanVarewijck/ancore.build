@@ -3,7 +3,7 @@ const Case = ({ title, banner, tags, href }) => {
     return <span>{i}</span>;
   });
   return (
-    <li className="case">
+    <div className="case">
       <a href={href}>
         <section>
           <h6>{title}</h6>
@@ -13,7 +13,7 @@ const Case = ({ title, banner, tags, href }) => {
           <div>{tagsElements}</div>
         </section>
       </a>
-    </li>
+    </div>
   );
 };
 

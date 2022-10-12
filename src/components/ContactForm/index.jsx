@@ -1,11 +1,15 @@
-import { useState, useEffect } from "react";
-import Link from "../Link";
+import { useState } from "react";
 
 const ContactForm = () => {
-  // const [feedbackInput, setFeedbackInput] = useState();
-  const [feedbackSubmit, setFeedbackSubmit] = useState({});
+  const [feedbackInput, setFeedbackInput] = useState(
+    "/assets/icons/check-gray.svg"
+  );
+  const [feedbackSubmit, setFeedbackSubmit] = useState({
+    message: "",
+    icon: "",
+  });
   const [hasSubmitted, setHasSubmitted] = useState(false);
-  const [emails, setEmails] = useState();
+  // const [emails, setEmails] = useState();
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -17,23 +21,28 @@ const ContactForm = () => {
   );
 
   function handleFormData(e) {
-    setFormData(function (prevState) {
-      const { name, value, type } = e.target;
+    const { name, value } = e.target;
+    if (feedbackSubmit.message) {
+      setFeedbackSubmit({});
+    }
 
-      if (feedbackSubmit.message) {
-        setFeedbackSubmit({});
+    if (name === "email") {
+      switch (true) {
+        case !value.includes("@"):
+          setFeedbackInput("/assets/icons/check-gray.svg");
+          console.log("need have a @");
+          break;
+        case value.includes("@") && !value.match(validEmailCheck):
+          setFeedbackInput("/assets/icons/check-gray.svg");
+          console.log("This is a invalid email");
+          break;
+        default:
+          setFeedbackInput("/assets/icons/check-green.svg");
+          console.log("email is great!");
       }
+    }
 
-      // if (name === "email") {
-      //   if (!value.includes("@")) {
-      //     setFeedbackInput("/assets/mail-red.svg");
-      //   } else if (value.includes("@") && !value.match(validEmailCheck)) {
-      //     setFeedbackInput("/assets/mail-orange.svg");
-      //   } else if (value.match(validEmailCheck)) {
-      //     setFeedbackInput("/assets/mail-green.svg");
-      //   }
-      // }
-
+    setFormData(function (prevState) {
       return {
         ...prevState,
         [name]: value,
@@ -44,13 +53,14 @@ const ContactForm = () => {
   function submitHandler(e) {
     e.preventDefault();
     switch (true) {
-      case formData.username == "" ||
-        formData.email == "" ||
-        formData.message == "":
+      case formData.username === "" ||
+        formData.email === "" ||
+        formData.message === "":
         setFeedbackSubmit((prevState) => {
           return {
             ...prevState,
             message: "Fill in all inputs please!",
+            icon: "/assets/icons/warning-red.svg",
           };
         });
         break;
@@ -59,6 +69,7 @@ const ContactForm = () => {
           return {
             ...prevState,
             message: "Your email must contain a @ sign.",
+            icon: "/assets/icons/warning-red.svg",
           };
         });
         break;
@@ -68,6 +79,7 @@ const ContactForm = () => {
           return {
             ...prevState,
             message: "You entered a invalid email adress.",
+            icon: "/assets/icons/warning-orange.svg",
           };
         });
         break;
@@ -106,20 +118,25 @@ const ContactForm = () => {
             required
           ></textarea>
           <div className="submit-container">
-            <p>{feedbackSubmit.message}</p>
+            {feedbackSubmit.message && (
+              <div>
+                <p>{feedbackSubmit.message}</p>
+                <img src={feedbackSubmit.icon} alt="submit validation icon" />
+              </div>
+            )}
             <button
               className="btn btn-primary"
               onClick={submitHandler}
               type="submit"
             >
               Sent Message
-              <i class="bi bi-send-check-fill"></i>
+              <i className="bi bi-send-check-fill"></i>
             </button>
           </div>
         </form>
       ) : (
         <div>
-          <p></p>
+          <p>Thanks for your message we will reply as soon as possible!</p>
         </div>
       )}
     </div>
