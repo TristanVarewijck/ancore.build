@@ -3,9 +3,42 @@
     display: block;
     text-decoration: none;
     color: #fff;
-    h6 {
+    transition: 200ms linear;
+
+    &:hover {
+      h5 {
+        opacity: 1;
+      }
+
+      div {
+        display: flex;
+        span {
+          font-weight: 100;
+          color: rgba($white, $alpha: 1);
+          border: 1px solid $white;
+          border-radius: 70px;
+          display: block;
+          margin-right: 15px;
+          margin-top: 20px;
+          padding: 5px 20px;
+        }
+      }
+      .banner-container {
+        img.banner {
+          flex-shrink: 0;
+          min-width: 100%;
+          min-height: 100%;
+          transform: scale(1.05) rotate(-3deg);
+        }
+      }
+    }
+
+    h5 {
       text-transform: uppercase;
-      font-weight: 300 !important;
+      font-weight: 400 !important;
+      transition: 200ms linear;
+      opacity: 0.75;
+      color: $white;
     }
     .banner-container {
       position: relative;
@@ -20,6 +53,7 @@
         flex-shrink: 0;
         min-width: 100%;
         min-height: 100%;
+        transition: 200ms linear;
       }
     }
     div {
@@ -33,6 +67,7 @@
         margin-right: 15px;
         margin-top: 20px;
         padding: 5px 20px;
+        transition: 200ms linear;
       }
     }
   }

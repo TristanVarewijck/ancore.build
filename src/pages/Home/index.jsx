@@ -23,7 +23,7 @@ const Home = () => {
       <Services setRef={setRef} />
       {margin.small}
       <Quote
-        title={"We believe that everything should be"}
+        title={"We believe that everything Web should be"}
         icon="joystick"
         animatedLastWord={
           <AutoType

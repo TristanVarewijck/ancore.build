@@ -6,7 +6,7 @@ const Case = ({ title, banner, tags, href }) => {
     <div className="case">
       <a href={href}>
         <section>
-          <h6>{title}</h6>
+          <h5>{title}</h5>
           <div className="banner-container">
             <img src={banner} className="banner img-fluid" alt="Case Banner" />
           </div>
