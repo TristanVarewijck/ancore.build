@@ -43,14 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "browser": {
-    "crypto": true,
-    "fs": false,
-    "path": false,
-    "os": false,
-    "net": false,
-    "stream": false,
-    "tls": false
   }
 }

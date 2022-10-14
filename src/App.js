@@ -12,6 +12,8 @@ import Contact from "./pages/Contact";
 import MainNav from "./components/Navbar";
 import Footer from "./components/Footer";
 
+import GetCollection from "./functions/Firestore/getCollection";
+
 // styles
 import "./scss/App.scss";
 
@@ -21,7 +23,7 @@ import json from "./content";
 const savedLang = localStorage.getItem("lang");
 export const languageSetting = createContext(null);
 
-function App() {
+const App = () => {
   const [content, setContent] = useState(savedLang ? json[savedLang] : json.EN);
 
   // set language
@@ -55,6 +57,6 @@ function App() {
       </languageSetting.Provider>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
