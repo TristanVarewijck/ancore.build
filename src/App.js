@@ -26,14 +26,13 @@ export const languageSetting = createContext(null);
 const App = () => {
   const [content, setContent] = useState(savedLang ? json[savedLang] : json.EN);
 
+  const myStuff = GetCollection("content");
+
   // set language
   function languageSetter(e) {
     e.preventDefault();
     const value = e.target.id;
-    setContent(function (prevState) {
-      return prevState, json[value];
-    });
-
+    setContent(json[value]);
     localStorage.setItem("lang", value);
   }
 
