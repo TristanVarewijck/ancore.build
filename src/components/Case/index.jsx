@@ -1,10 +1,26 @@
-const Case = ({ title, banner, tags, href }) => {
-  const tagsElements = tags.map((i) => {
-    return <span>{i}</span>;
+import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
+
+const Case = ({ title, banner, tags }) => {
+  const [show, setShow] = useState();
+  const tagsElements = tags.map((i, index) => {
+    return <span key={index}>{i}</span>;
   });
+
+  console.log("i v been created!");
+
   return (
     <div className="case">
-      <a href={href}>
+      {show && (
+        <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
+          <Modal.Header closeButton>
+            <Modal.Title>{title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Modal body content</Modal.Body>
+        </Modal>
+      )}
+
+      <a type="button" role="button" onClick={() => setShow(true)}>
         <section>
           <h5>{title}</h5>
           <div className="banner-container">

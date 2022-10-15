@@ -9,7 +9,6 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const MainNav = ({ languageSetter }) => {
   const content = useContext(languageSetting);
-  console.log(content);
 
   return (
     <Navbar expand="lg" variant="dark">

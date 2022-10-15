@@ -8,14 +8,14 @@ const GetCollection = (collectionName) => {
   const [items, setItems] = useState();
 
   useEffect(() => {
-    async function getDocuments() {
+    const getDocuments = async () => {
       const query = collection(appDatabase, collectionName);
       const docsSnap = await getDocs(query);
       const response = docsSnap.docs.map((doc) => {
         return doc.data();
       });
       setItems(response);
-    }
+    };
 
     getDocuments();
   }, [collectionName]);

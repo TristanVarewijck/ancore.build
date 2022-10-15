@@ -1,6 +1,142 @@
 {
   "EN": {
-    "language": "DU",
+    "language": "EN",
+    "Navbar": {
+      "portfolio": "Portfolio",
+      "services": "Diensten",
+      "about": "Over ons",
+      "contact": "Contact"
+    },
+    "Home": {
+      "Hero": {
+        "title": "WIJ BOUWEN ALLES DIGITAAL",
+        "textBlocks": [
+          {
+            "title": "Herşeyi dijital olarak yapıyoruz",
+            "text": "Donec pretium, nisl sed tempo"
+          },
+          {
+            "title": "Herşeyi dijital olarak yapıyoruz",
+            "text": "Donec pretium, nisl sed tempo"
+          },
+          {
+            "title": "Herşeyi dijital olarak yapıyoruz",
+            "text": "Donec pretium, nisl sed tempo"
+          }
+        ]
+      },
+      "Services": {
+        "title": "WIJ ZIJN BLIJ MET HET HOOGSTE RESULTAAT",
+        "servicesBlocks": [
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          },
+          {
+            "title": "Amazing Service",
+            "subtitle": "Donec pretium, nisl sed tempo",
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
+          }
+        ]
+      },
+      "Projects": {
+        "title": "WIJ BOUWEN ALLES DIGITAAL",
+        "cases": [
+          {
+            "title": "Amazing Service1!",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          },
+          {
+            "title": "Amazing Service!2",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          },
+          {
+            "title": "Amazing Service!3",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          },
+          {
+            "title": "Amazing Service!4",
+            "banner": "/assets/cases/case-1.png",
+            "tags": ["Development", "UI Design"]
+          }
+        ]
+      },
+      "Reviews": {
+        "testimonials": [
+          {
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
+          },
+          {
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
+          },
+          {
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
+          },
+          {
+            "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis,",
+            "profile": "jane-doe.png",
+            "name": "Jane Doe",
+            "position": "Head researcher of Apple"
+          }
+        ]
+      },
+      "Contact": {
+        "methods": [
+          {
+            "title": "(020) 6 36440961",
+            "subtitle": "Telefoon number"
+          },
+          {
+            "title": "contact@ancore.build",
+            "subtitle": "E-mail address"
+          },
+          {
+            "title": "@ancorebuild",
+            "subtitle": "Telegram contact"
+          },
+          {
+            "title": "Contact form",
+            "subtitle": "Write us in the form below"
+          }
+        ]
+      }
+    }
+  },
+  "RU": {
+    "language": "RU",
     "Navbar": {
       "portfolio": "Portfolio",
       "services": "Diensten",

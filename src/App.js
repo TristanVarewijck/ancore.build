@@ -1,23 +1,13 @@
 import { useState, createContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// pages
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-
-// global components
 import MainNav from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import GetCollection from "./functions/Firestore/getCollection";
-
-// styles
 import "./scss/App.scss";
-
-// content file
 import json from "./content";
 
 const savedLang = localStorage.getItem("lang");
@@ -25,8 +15,6 @@ export const languageSetting = createContext(null);
 
 const App = () => {
   const [content, setContent] = useState(savedLang ? json[savedLang] : json.EN);
-
-  const myStuff = GetCollection("content");
 
   // set language
   function languageSetter(e) {

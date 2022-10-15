@@ -136,8 +136,6 @@ const ContactForm = () => {
             onChange={handleFormData}
             value={formData.message}
             autoComplete="off"
-            maxlength="150"
-            minlength="1"
             onKeyUp={characterCount}
             required
           ></textarea>
