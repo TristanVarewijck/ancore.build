@@ -14,7 +14,6 @@ const Case = ({ title, banner, tags }) => {
     setShow(value);
   };
 
-  console.log("making this item...");
   return (
     <div className="case">
       <a type="button" role="button" onClick={() => modalHandler(true)}>

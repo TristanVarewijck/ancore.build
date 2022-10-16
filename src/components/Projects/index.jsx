@@ -12,7 +12,6 @@ const Projects = () => {
     y: null,
   });
 
-  // memoirize lists (unchanging)
   const casesElements = useMemo(() => {
     return cases.map((i, index) => (
       <li key={`Case: ${index}`}>
