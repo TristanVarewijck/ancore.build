@@ -1,19 +1,30 @@
-import { useContext, useMemo, useState, useCallback } from "react";
+import { useContext, useMemo, useState, useRef } from "react";
 import { languageSetting } from "../../App";
 import Case from "../Case";
 import Link from "../Link";
 
 const Projects = () => {
-  const [customCursor, setCustomCursor] = useState([false]);
+  const [isCursor, setIsCursor] = useState(false);
   const content = useContext(languageSetting);
   const cases = content.Home.Projects.cases;
+  const [mousePos, setMousePos] = useState({
+    x: null,
+    y: null,
+  });
 
-  // setCustomCursor(!customCursor);
+  if (isCursor) {
+    window.addEventListener("mousemove", (e) => {
+      setMousePos((prevState) => {
+        return {
+          ...prevState,
+          x: e.clientX,
+          y: e.clientY,
+        };
+      });
+    });
+  }
 
-  useCallback(() => {
-    console.log("loggggging");
-  }, customCursor);
-
+  // memoirize lists (unchanging)
   const casesElements = useMemo(() => {
     return cases.map((i, index) => (
       <li key={`Case: ${index}`}>
@@ -27,13 +38,12 @@ const Projects = () => {
     ));
   }, [cases]);
 
-  console.log(cases);
-
   return (
     <div
       className="projects"
-      onMouseEnter={() => setCustomCursor([true])}
-      onMouseLeave={() => setCustomCursor([false])}
+      onMouseEnter={() => setIsCursor(true)}
+      onMouseLeave={() => setIsCursor(false)}
+      style={{ cursor: "none" }}
     >
       <h2>Our Recent Projects</h2>
       <ul>{casesElements}</ul>
@@ -47,9 +57,14 @@ const Projects = () => {
           icon="clipboard2-heart-fill"
         />
       </div>
-      {/* {customCursor && (
-        <div className="customCursor">This is my new Cursor!</div>
-      )} */}
+      {isCursor && (
+        <div
+          className="customCursor"
+          style={{
+            transform: `translate3d(calc(${mousePos.x}px - 50%), calc(${mousePos.y}px - 50%), 0)`,
+          }}
+        ></div>
+      )}
     </div>
   );
 };
