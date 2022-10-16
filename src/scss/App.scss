@@ -6,6 +6,7 @@
 @import "./components/TextBlock.scss";
 @import "./components/Link.scss";
 @import "./components/Services.scss";
+@import "./components/Accordion.scss";
 @import "./components/Quote.scss";
 @import "./components/Projects.scss";
 @import "./components/Case.scss";
@@ -30,7 +31,7 @@ $theme-colors: (
     // "warning": $warning,
     // "danger": $danger,
     // "light": $light,
-    // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 ::-webkit-scrollbar {

@@ -3,6 +3,7 @@ import ModalComponent from "../ModalComponent";
 
 const Case = ({ title, banner, tags }) => {
   const [show, setShow] = useState(false);
+
   const tagsElements = useMemo(() => {
     const createTagsElements = tags.map((i, index) => {
       return <span key={index}>{i}</span>;

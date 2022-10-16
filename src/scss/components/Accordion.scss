@@ -1,0 +1,50 @@
+.accordion-button {
+    position: relative;
+    display: block !important;
+    align-items: none !important;
+    width: 100%;
+    padding: none !important;
+    font-size: 1rem;
+    color: var(accordion-btn-color);
+    text-align: left;
+    background-color: var(accordion-btn-bg);
+    border: none !important;
+    border-radius: none !important;
+    overflow-anchor: none;
+    transition: var(accordion-transition);
+}
+
+.accordion-item {
+    color: none !important;
+    background-color: none !important;
+    border: none !important;
+}
+
+$accordion-padding-y: none;
+$accordion-padding-x: none;
+$accordion-color: rgba($white, 0.87);
+$accordion-bg: $gray;
+$accordion-border-width: 0px;
+$accordion-border-color: none;
+$accordion-border-radius: 2px;
+$accordion-inner-border-radius: none;
+
+$accordion-body-padding-y: 15px;
+$accordion-body-padding-x: 20px;
+
+$accordion-button-padding-y: none;
+$accordion-button-padding-x: none;
+// $accordion-button-color: $action;
+$accordion-button-bg: $black;
+// $accordion-transition: $btn-transition, border-radius 0.15s ease;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: inherit;
+
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+
+// $accordion-icon-width: 1.25rem;
+// $accordion-icon-color: $accordion-color;
+$accordion-icon-active-color: none;
+// $accordion-icon-transition: transform 0.2s ease-in-out;
+// $accordion-icon-transform: rotate(-180deg);
