@@ -1,19 +1,23 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import ModalComponent from "../ModalComponent";
 
 const Case = ({ title, banner, tags }) => {
-  const [show, setShow] = useState();
-  const tagsElements = tags.map((i, index) => {
-    return <span key={index}>{i}</span>;
-  });
+  const [show, setShow] = useState(false);
+  const tagsElements = useMemo(() => {
+    const createTagsElements = tags.map((i, index) => {
+      return <span key={index}>{i}</span>;
+    });
+    return createTagsElements;
+  }, [tags]);
 
-  console.log("i v been created!");
+  const modalHandler = (value) => {
+    setShow(value);
+  };
 
+  console.log("making this item...");
   return (
     <div className="case">
-      {show && <ModalComponent title={title} />}
-
-      <a type="button" role="button" onClick={() => setShow(true)}>
+      <a type="button" role="button" onClick={() => modalHandler(true)}>
         <section>
           <h5>{title}</h5>
           <div className="banner-container">
@@ -22,6 +26,8 @@ const Case = ({ title, banner, tags }) => {
           <div>{tagsElements}</div>
         </section>
       </a>
+
+      {show && <ModalComponent title={title} modalHandler={modalHandler} />}
     </div>
   );
 };

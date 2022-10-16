@@ -1,4 +1,4 @@
-import { useContext, useMemo, useState, useCallback } from "react";
+import { useContext, useMemo, useState, useCallback, useEffect } from "react";
 import { languageSetting } from "../../App";
 import Case from "../Case";
 import Link from "../Link";
@@ -11,18 +11,6 @@ const Projects = () => {
     x: null,
     y: null,
   });
-
-  if (isCursor) {
-    window.addEventListener("mousemove", (e) => {
-      setMousePos((prevState) => {
-        return {
-          ...prevState,
-          x: e.clientX,
-          y: e.clientY,
-        };
-      });
-    });
-  }
 
   // memoirize lists (unchanging)
   const casesElements = useMemo(() => {
@@ -38,13 +26,28 @@ const Projects = () => {
     ));
   }, [cases]);
 
-  // console.log("i rerendered!");
+  const handleCursorTracking = useCallback((event) => {
+    setMousePos((prevState) => {
+      return {
+        ...prevState,
+        x: event.clientX,
+        y: event.clientY,
+      };
+    });
+  }, []);
+
+  useEffect(() => {
+    isCursor
+      ? window.addEventListener("mousemove", handleCursorTracking)
+      : window.removeEventListener("mousemove", handleCursorTracking);
+    return () => window.removeEventListener("mousemove", handleCursorTracking);
+  }, [isCursor, handleCursorTracking]);
 
   return (
     <div
       className="projects"
-      onMouseEnter={() => setIsCursor((prevState) => !prevState)}
-      onMouseLeave={() => setIsCursor((prevState) => !prevState)}
+      onMouseEnter={() => setIsCursor(true)}
+      onMouseLeave={() => setIsCursor(false)}
       style={{ cursor: "none" }}
     >
       <h2>Our Recent Projects</h2>

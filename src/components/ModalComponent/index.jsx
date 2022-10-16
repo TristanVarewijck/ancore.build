@@ -1,10 +1,13 @@
 import Modal from "react-bootstrap/Modal";
-
-const ModalComponent = ({ title }) => {
+const ModalComponent = (props) => {
   return (
-    <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
+    <Modal
+      show={true}
+      fullscreen={true}
+      onHide={() => props.modalHandler(false)}
+    >
       <Modal.Header closeButton>
-        <Modal.Title>{title}</Modal.Title>
+        <Modal.Title>{props.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>Modal body content</Modal.Body>
     </Modal>
