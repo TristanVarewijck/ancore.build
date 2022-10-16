@@ -1,4 +1,4 @@
-import { useContext, useMemo, useState, useRef } from "react";
+import { useContext, useMemo, useState, useCallback } from "react";
 import { languageSetting } from "../../App";
 import Case from "../Case";
 import Link from "../Link";
@@ -38,11 +38,13 @@ const Projects = () => {
     ));
   }, [cases]);
 
+  // console.log("i rerendered!");
+
   return (
     <div
       className="projects"
-      onMouseEnter={() => setIsCursor(true)}
-      onMouseLeave={() => setIsCursor(false)}
+      onMouseEnter={() => setIsCursor((prevState) => !prevState)}
+      onMouseLeave={() => setIsCursor((prevState) => !prevState)}
       style={{ cursor: "none" }}
     >
       <h2>Our Recent Projects</h2>

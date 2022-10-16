@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
+import ModalComponent from "../ModalComponent";
 
 const Case = ({ title, banner, tags }) => {
   const [show, setShow] = useState();
@@ -11,14 +11,7 @@ const Case = ({ title, banner, tags }) => {
 
   return (
     <div className="case">
-      {show && (
-        <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
-          <Modal.Header closeButton>
-            <Modal.Title>{title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Modal body content</Modal.Body>
-        </Modal>
-      )}
+      {show && <ModalComponent title={title} />}
 
       <a type="button" role="button" onClick={() => setShow(true)}>
         <section>
