@@ -5,27 +5,26 @@ import Link from "../Link";
 import Dropdown from "react-bootstrap/Dropdown";
 
 const Projects = () => {
-  const [isCursor, setIsCursor] = useState(false);
+  const content = useContext(languageSetting);
+  const [isCursor, setIsCursor] = useState();
   const [option, setOption] = useState("All");
   const [mousePos, setMousePos] = useState({
     x: null,
     y: null,
   });
 
-  const content = useContext(languageSetting);
+  const cases = content.Home.Projects.cases
+    .map((i) => ({
+      i,
+      sort: Math.random(),
+    }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ i }) => i);
 
-  const cases = useMemo(() => {
-    const randomized = content.Home.Projects.cases
-      .map((i) => ({
-        i,
-        sort: Math.random(),
-      }))
-      .sort((a, b) => a.sort - b.sort)
-      .map(({ i }) => i);
-    return randomized;
-  }, [content]);
+  // return randomized;
 
-  const casesElements = cases.map((i) => (
+  const [sortedCases, setSortedCases] = useState(cases);
+  const casesElements = sortedCases.map((i) => (
     <li key={i.id}>
       <Case
         title={i.title}
@@ -46,7 +45,7 @@ const Projects = () => {
     });
   }, []);
 
-  function sortCases(e) {
+  const sortCases = (e) => {
     e.preventDefault();
     const select = e.target.id;
     setOption(select);
@@ -56,16 +55,17 @@ const Projects = () => {
         const casesDateSorted = cases.sort(
           (a, b) => new Date(a.date) - new Date(b.date)
         );
-        console.log(casesDateSorted);
+        setSortedCases(casesDateSorted);
         break;
       case "Highlighted":
         const casesHighlighted = cases.filter((i) => i.isHighlighted == true);
-        console.log(casesHighlighted);
+        setSortedCases(casesHighlighted);
         break;
       default:
-      // console.log(casesRandomized);
+        console.log(cases);
+        setSortedCases(cases);
     }
-  }
+  };
 
   useEffect(() => {
     isCursor
