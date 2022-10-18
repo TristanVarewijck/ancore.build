@@ -1,5 +1,11 @@
 .projects {
   position: relative;
+
+  .section-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
   ul {
     margin: 0 auto;
     list-style-type: none;

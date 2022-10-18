@@ -29,32 +29,32 @@
         "title": "WIJ ZIJN BLIJ MET HET HOOGSTE RESULTAAT",
         "servicesBlocks": [
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 1",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 2",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 3",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 4",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 5",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 6",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           }
@@ -64,24 +64,36 @@
         "title": "WIJ BOUWEN ALLES DIGITAAL",
         "cases": [
           {
-            "title": "Amazing Service1!",
+            "id": 1,
+            "title": "Amazing Service!1",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2017-07-22",
+            "isHighlighted": false
           },
           {
+            "id": 2,
             "title": "Amazing Service!2",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2020-07-22",
+            "isHighlighted": true
           },
           {
+            "id": 3,
             "title": "Amazing Service!3",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2022-07-22",
+            "isHighlighted": true
           },
           {
+            "id": 4,
             "title": "Amazing Service!4",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2018-07-22",
+            "isHighlighted": false
           }
         ]
       },
@@ -165,32 +177,32 @@
         "title": "WIJ ZIJN BLIJ MET HET HOOGSTE RESULTAAT",
         "servicesBlocks": [
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 1",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 2",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 3",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 4",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 5",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           },
           {
-            "title": "Amazing Service",
+            "title": "Amazing Service 6",
             "subtitle": "Donec pretium, nisl sed tempo",
             "text": "Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl. sagittis felis, bibendum velit est ac nisl."
           }
@@ -200,24 +212,36 @@
         "title": "WIJ BOUWEN ALLES DIGITAAL",
         "cases": [
           {
-            "title": "Amazing Service!",
+            "id": 1,
+            "title": "Amazing Service!1",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2017-07-22",
+            "isHighlighted": false
           },
           {
-            "title": "Amazing Service!",
+            "id": 2,
+            "title": "Amazing Service!2",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2020-07-22",
+            "isHighlighted": true
           },
           {
-            "title": "Amazing Service!",
+            "id": 3,
+            "title": "Amazing Service!3",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2022-07-22",
+            "isHighlighted": true
           },
           {
-            "title": "Amazing Service!",
+            "id": 4,
+            "title": "Amazing Service!4",
             "banner": "/assets/cases/case-1.png",
-            "tags": ["Development", "UI Design"]
+            "tags": ["Development", "UI Design"],
+            "date": "2018-07-22",
+            "isHighlighted": false
           }
         ]
       },

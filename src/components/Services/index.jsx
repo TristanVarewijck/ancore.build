@@ -29,7 +29,7 @@ const Services = ({ setRef }) => {
 
   const serviceElements = content.Home.Services.servicesBlocks.map(
     (i, index) => (
-      <Accordion.Item eventKey={`${index}`} key={`Service: ${index}`}>
+      <Accordion.Item eventKey={`${index}`} key={i.title}>
         <Accordion.Header>
           <TextBlock
             title={i.title}
