@@ -7,7 +7,7 @@ import Projects from "../../components/Projects";
 import Partners from "../../components/Partners";
 import Reviews from "../../components/Reviews";
 import Contact from "../../components/Contact";
-import AutoType from "../../functions/AutoType";
+import AutoType from "../../functions/Typed";
 
 const Home = () => {
   const [ref, setRef] = useState(null);

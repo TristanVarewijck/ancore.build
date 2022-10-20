@@ -1,30 +1,21 @@
-import { useContext, useMemo, useState, useCallback, useEffect } from "react";
+import { useContext, useState, useCallback, useEffect } from "react";
 import { languageSetting } from "../../App";
 import Case from "../Case";
 import Link from "../Link";
-import Dropdown from "react-bootstrap/Dropdown";
+import DropdownComponent from "../Dropdown";
 
+// !! check if everything is performance optimized !!
 const Projects = () => {
   const content = useContext(languageSetting);
+  const cases = content.Home.Projects.cases;
+
   const [isCursor, setIsCursor] = useState();
-  const [option, setOption] = useState("All");
+  const [option, setOption] = useState("New/old");
   const [mousePos, setMousePos] = useState({
     x: null,
     y: null,
   });
-
-  const cases = content.Home.Projects.cases
-    .map((i) => ({
-      i,
-      sort: Math.random(),
-    }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ i }) => i);
-
-  // return randomized;
-
-  const [sortedCases, setSortedCases] = useState(cases);
-  const casesElements = sortedCases.map((i) => (
+  const casesElements = cases.map((i) => (
     <li key={i.id}>
       <Case
         title={i.title}
@@ -48,24 +39,30 @@ const Projects = () => {
   const sortCases = (e) => {
     e.preventDefault();
     const select = e.target.id;
-    setOption(select);
 
+    setOption(select);
     switch (select) {
-      case "Recent":
-        const casesDateSorted = cases.sort(
-          (a, b) => new Date(a.date) - new Date(b.date)
-        );
-        setSortedCases(casesDateSorted);
+      case "New/Old":
+        console.log("new old");
+        cases.sort((a, b) => new Date(a.date) - new Date(b.date));
         break;
-      case "Highlighted":
-        const casesHighlighted = cases.filter((i) => i.isHighlighted == true);
-        setSortedCases(casesHighlighted);
+      case "Old/New":
+        console.log("old new");
+        cases.sort((a, b) => new Date(b.date) - new Date(a.date));
+        break;
+      case "A/Z":
+        console.log("az");
+        cases.sort((a, b) => a.title.localeCompare(b.title));
         break;
       default:
-        console.log(cases);
-        setSortedCases(cases);
+        console.error("error in sorting");
+        break;
     }
   };
+
+  useEffect(() => {
+    cases.sort((a, b) => new Date(a.date) - new Date(b.date));
+  }, [content]);
 
   useEffect(() => {
     isCursor
@@ -83,22 +80,11 @@ const Projects = () => {
     >
       <div className="section-heading">
         <h2>Our Recent Projects</h2>
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            {option}
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item id="Recent" onClick={sortCases}>
-              Recent
-            </Dropdown.Item>
-            <Dropdown.Item id="Highlighted" onClick={sortCases}>
-              Highlighted
-            </Dropdown.Item>
-            <Dropdown.Item id="All" onClick={sortCases}>
-              All
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <DropdownComponent
+          optionHandler={sortCases}
+          options={["New/Old", "Old/New", "A/Z"]}
+          selected={option}
+        ></DropdownComponent>
       </div>
       <ul>{casesElements}</ul>
       <div className="link-to-portfolio">
