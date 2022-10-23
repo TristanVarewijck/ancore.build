@@ -3,7 +3,6 @@ import { languageSetting } from "../../App";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "../Link";
-import HeaderTextBlock from "../HeaderTextBlock";
 
 const Hero = ({ scrollTo }) => {
   function scrollToFirstSection(e) {
@@ -12,7 +11,6 @@ const Hero = ({ scrollTo }) => {
   }
 
   const content = useContext(languageSetting);
-
   return (
     <div className="Hero">
       <Row className="gx-5 justify-content-center align-items-top">
@@ -38,27 +36,6 @@ const Hero = ({ scrollTo }) => {
             handleButton={scrollToFirstSection}
             href="https://www.google.com"
           />
-          <Row className="flex-column justify-content-between gy-5 mt-5">
-            <Col>
-              <HeaderTextBlock
-                title="LOREM"
-                text="Donec pretium, nisl sed tempor faucibus, tortor sapien"
-              />
-            </Col>
-            <Col>
-              <HeaderTextBlock
-                title="LORE"
-                text="Donec pretium, nisl sed tempor faucibus, tortor sapien"
-              />
-            </Col>
-
-            <Col>
-              <HeaderTextBlock
-                title="LO"
-                text="Donec pretium, nisl sed tempor faucibus, tortor sapien"
-              />
-            </Col>
-          </Row>
         </Col>
       </Row>
     </div>

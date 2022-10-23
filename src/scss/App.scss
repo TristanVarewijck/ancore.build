@@ -2,7 +2,6 @@
 @import "./variables";
 @import "./components/Navbar.scss";
 @import "./components/Hero.scss";
-@import "./components/HeaderTextBlock.scss";
 @import "./components/TextBlock.scss";
 @import "./components/Link.scss";
 @import "./components/Services.scss";
@@ -32,7 +31,7 @@ $theme-colors: (
     // "warning": $warning,
     // "danger": $danger,
     // "light": $light,
-    // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // "dark": $dark,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 ::-webkit-scrollbar {
