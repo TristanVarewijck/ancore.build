@@ -65,35 +65,55 @@
         "cases": [
           {
             "id": 1,
-            "title": "Amazing Service!1",
-            "banner": "/assets/cases/case-1.png",
+            "title": "Pixelgoat.xyz",
             "tags": ["Development", "UI Design"],
             "date": "2017-07-22",
-            "isHighlighted": false
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           },
           {
             "id": 2,
             "title": "Amazing Service!2",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2020-07-22",
-            "isHighlighted": true
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           },
           {
             "id": 3,
             "title": "Amazing Service!3",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2022-07-22",
-            "isHighlighted": true
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           },
           {
             "id": 4,
             "title": "Amazing Service!4",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2018-07-22",
-            "isHighlighted": false
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           }
         ]
       },
@@ -262,34 +282,54 @@
           {
             "id": 1,
             "title": "Amazing Service!1",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2017-07-22",
-            "isHighlighted": false
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           },
           {
             "id": 2,
             "title": "Amazing Service!2",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2020-07-22",
-            "isHighlighted": true
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           },
           {
             "id": 3,
             "title": "Amazing Service!3",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2022-07-22",
-            "isHighlighted": true
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           },
           {
             "id": 4,
             "title": "Amazing Service!4",
-            "banner": "/assets/cases/case-1.png",
             "tags": ["Development", "UI Design"],
             "date": "2018-07-22",
-            "isHighlighted": false
+            "images": {
+              "logo": "assets/cases/pixelgoatxyz/logo.svg",
+              "thumbnail": "/assets/cases/pixelgoatxyz/thumbnail.png",
+              "thumbnailBig": "/assets/cases/pixelgoatxyz/thumbnailBig.jpg"
+            },
+            "employees": ["Tristan Varewijck", "Muhammet Kömür"],
+            "backgroundColor": "#FFF065"
           }
         ]
       },

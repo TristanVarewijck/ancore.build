@@ -1,15 +1,14 @@
 import { useState, useMemo } from "react";
-import ModalComponent from "../ModalComponent";
+import CaseModal from "../CaseModal";
 
-const Case = ({ title, banner, tags }) => {
+const Case = ({ content }) => {
   const [show, setShow] = useState(false);
-
   const tagsElements = useMemo(() => {
-    const createTagsElements = tags.map((i, index) => {
+    const createTagsElements = content.tags.map((i, index) => {
       return <span key={index}>{i}</span>;
     });
     return createTagsElements;
-  }, [tags]);
+  }, [content.tags]);
 
   const modalHandler = (value) => {
     setShow(value);
@@ -19,15 +18,19 @@ const Case = ({ title, banner, tags }) => {
     <div className="case">
       <a type="button" role="button" onClick={() => modalHandler(true)}>
         <section>
-          <h5>{title}</h5>
+          <h5>{content.title}</h5>
           <div className="banner-container">
-            <img src={banner} className="banner img-fluid" alt="Case Banner" />
+            <img
+              src={content.images.thumbnail}
+              className="banner img-fluid"
+              alt="Case Banner"
+            />
           </div>
           <div>{tagsElements}</div>
         </section>
       </a>
 
-      {show && <ModalComponent title={title} modalHandler={modalHandler} />}
+      {show && <CaseModal content={content} modalHandler={modalHandler} />}
     </div>
   );
 };

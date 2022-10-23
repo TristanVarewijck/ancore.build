@@ -1,16 +1,21 @@
 .testimonial {
   position: relative;
-  width: 320px;
+  width: 98%;
   height: 280px;
   background: $gray;
   border: 2px solid $lightGray;
   border-radius: 5px;
   padding: 20px;
   flex: 0 0 auto;
-  margin-right: 35px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 250ms ease-in-out;
+
+  &:hover {
+    background: #202020;
+    border: 2px solid $action;
+  }
 
   > img {
     width: 35px;

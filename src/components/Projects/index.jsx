@@ -8,21 +8,15 @@ import DropdownComponent from "../Dropdown";
 const Projects = () => {
   const content = useContext(languageSetting);
   const cases = content.Home.Projects.cases;
-
   const [isCursor, setIsCursor] = useState();
   const [option, setOption] = useState("New/old");
   const [mousePos, setMousePos] = useState({
     x: null,
     y: null,
   });
-  const casesElements = cases.map((i) => (
+  const casesElements = cases.map((i, index) => (
     <li key={i.id}>
-      <Case
-        title={i.title}
-        banner={i.banner}
-        tags={i.tags}
-        href={`/portfolio/${i.title}`}
-      />
+      <Case content={cases[index]} />
     </li>
   ));
 
@@ -39,7 +33,6 @@ const Projects = () => {
   const sortCases = (e) => {
     e.preventDefault();
     const select = e.target.id;
-
     setOption(select);
     switch (select) {
       case "New/Old":
@@ -55,7 +48,7 @@ const Projects = () => {
         cases.sort((a, b) => a.title.localeCompare(b.title));
         break;
       default:
-        console.error("error in sorting");
+        console.error("error in projects sorting");
         break;
     }
   };

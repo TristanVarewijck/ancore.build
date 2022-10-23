@@ -1,0 +1,103 @@
+$modal-content-color: null;
+$modal-content-bg: $white;
+$modal-backdrop-bg: $black;
+$modal-backdrop-opacity: 0.5;
+$modal-header-border-color: none;
+$modal-fade-transform: translate(0, -50px);
+$modal-show-transform: none;
+$modal-transition: transform 0.3s ease-out;
+$modal-scale-transform: scale(1.02);
+
+.modal {
+    .modal-content {
+        position: relative;
+        display: block !important;
+        flex-direction: column;
+        width: 100%;
+        .modal-header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: none;
+            border-bottom: none !important;
+            z-index: 1;
+        }
+
+        .modal-banner,
+        .modal-description {
+            position: relative;
+            height: 100vh;
+
+            > a {
+                position: absolute;
+                bottom: 2.5%;
+                right: 50%;
+                animation: arrowJump 2s infinite;
+            }
+        }
+
+        .modal-banner {
+            position: relative;
+            .banner-img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 1000px;
+                border: none;
+                box-shadow: 0px 4px 48px -10px rgba(35, 35, 35, 0.1);
+            }
+        }
+
+        .modal-description {
+            background: $black;
+            padding-top: 8em;
+
+            p {
+                font-size: 18px;
+                opacity: 1;
+            }
+
+            .bullet-points {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                margin-top: 6em;
+                > li {
+                    h5 {
+                        font-weight: 600;
+                        margin-bottom: 4px;
+                    }
+                    ul {
+                        list-style-type: none;
+                        li {
+                            opacity: 0.87;
+                            transition: 200ms ease-in-out;
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                border-bottom: 1px solid $white;
+                            }
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes arrowJump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

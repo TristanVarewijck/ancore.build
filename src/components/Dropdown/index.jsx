@@ -20,22 +20,3 @@ const DropdownComponent = ({ optionHandler, options, selected }) => {
 };
 
 export default DropdownComponent;
-
-{
-  /* <Dropdown>
-<Dropdown.Toggle variant="success" id="dropdown-basic">
-  {option}
-</Dropdown.Toggle>
-<Dropdown.Menu>
-  <Dropdown.Item id="Recent" onClick={sortCases}>
-    Recent
-  </Dropdown.Item>
-  <Dropdown.Item id="A/Z" onClick={sortCases}>
-    A/Z
-  </Dropdown.Item>
-  <Dropdown.Item id="All" onClick={sortCases}>
-    All
-  </Dropdown.Item>
-</Dropdown.Menu>
-</Dropdown> */
-}
