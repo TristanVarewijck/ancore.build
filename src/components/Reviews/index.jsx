@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { languageSetting } from "../../App";
 import Testimonial from "../../components/Testimonial";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -33,7 +32,7 @@ const Reviews = () => {
   const testimonialElements = content.Home.Reviews.testimonials.map(
     (i, index) => {
       return (
-        <div key={`Testimonial: ${index}`}>
+        <div key={i.name}>
           <Testimonial
             text={i.text}
             profile={i.profile}

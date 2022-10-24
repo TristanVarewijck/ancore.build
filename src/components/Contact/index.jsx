@@ -7,7 +7,7 @@ const Contact = () => {
   const content = useContext(languageSetting);
   const contactElements = content.Home.Contact.methods.map((i, index) => {
     return (
-      <li key={index}>
+      <li key={i.title}>
         <TextBlock
           title={i.title}
           subtitle={i.subtitle}

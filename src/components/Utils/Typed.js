@@ -1,6 +1,6 @@
 import Typed from "react-typed";
 
-const AutoType = ({ words, forwardSpeed, backwardSpeed, isLoop }) => {
+export const AutoType = ({ words, forwardSpeed, backwardSpeed, isLoop }) => {
   return (
     <Typed
       strings={words}
@@ -10,5 +10,3 @@ const AutoType = ({ words, forwardSpeed, backwardSpeed, isLoop }) => {
     ></Typed>
   );
 };
-
-export default AutoType;

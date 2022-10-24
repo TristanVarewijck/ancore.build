@@ -19,7 +19,7 @@ const Footer = () => {
 
   const socialElements = socials.map((i, index) => {
     return (
-      <li key={`social ${index}`}>
+      <li key={i.icon}>
         <a href={i.link}>
           <span>
             <i className={`bi bi-${i.icon}`}></i>

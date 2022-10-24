@@ -3,6 +3,7 @@ import CaseModal from "../CaseModal";
 
 const Case = ({ content }) => {
   const [show, setShow] = useState(false);
+
   const tagsElements = useMemo(() => {
     const createTagsElements = content.tags.map((i, index) => {
       return <span key={index}>{i}</span>;

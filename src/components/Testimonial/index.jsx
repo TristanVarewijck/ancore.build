@@ -1,11 +1,8 @@
 const Testimonial = ({ text, profile, name, position }) => {
   return (
     <div className="testimonial">
-      {/* 1 */}
       <img src={`/assets/icons/comma.svg`} alt="Quote icon" />
-      {/* 2 */}
       <p>{text}</p>
-      {/* 3 */}
       <div className="profile">
         <section>
           <img
