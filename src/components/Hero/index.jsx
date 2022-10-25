@@ -13,16 +13,11 @@ const Hero = ({ scrollTo }) => {
   const content = useContext(languageSetting);
   return (
     <div className="Hero">
-      <Row className="gx-5 justify-content-center align-items-top">
-        <Col md={7}>
+      <Row className="gx-5 justify-content-center align-items-center pb-5">
+        <Col>
           <h1 className="mb-3">{content.Home.Hero.title}</h1>
-          <img
-            src="/assets/images/banner-img.png"
-            className="img-fluid mb-2 banner-img"
-            alt="Markup"
-          />
         </Col>
-        <Col md={5}>
+        <Col>
           <p>
             Donec pretium, nisl sed tempor faucibus, tortor sapien sagittis
             felis, bibendum velit est ac nisl. Proin placerat massa sit amet
@@ -36,6 +31,11 @@ const Hero = ({ scrollTo }) => {
             handleButton={scrollToFirstSection}
             href="https://www.google.com"
           />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="image-container">
+          <img src="/assets/images/banner-img.png" alt="" />
         </Col>
       </Row>
     </div>

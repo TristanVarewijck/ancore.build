@@ -1,7 +1,16 @@
 @import "../variables";
 
-.banner-img {
-  border: 1px solid $lightGray;
-  border-radius: 7px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+.image-container {
+  background-color: none;
+  height: 500px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
